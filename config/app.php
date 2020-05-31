@@ -13,8 +13,10 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
-
+    'name' => env('APP_NAME', 'Tonnes'),
+    'username' => 'admin',
+    'password' => 'qwer1234qwer!',
+    'email' => 'a.lapitski.developer@gmail.com',
     /*
     |--------------------------------------------------------------------------
     | Application Environment
