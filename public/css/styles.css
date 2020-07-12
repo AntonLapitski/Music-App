@@ -76,6 +76,7 @@ ul {
 }
 
 .header__logo h1 {
+    margin-top: -10px;
     transition: color 1s;
 }
 
@@ -561,4 +562,13 @@ div.item {
     .intro__text {
         margin-top: 192px;
     }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .author__content__wrapper {
+        flex-direction: column;
+    }
+
+
 }

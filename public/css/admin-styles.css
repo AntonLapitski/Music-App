@@ -1,0 +1,104 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #304030;
+    width: auto;
+    box-sizing: border-box;
+}
+
+html {overflow-x: hidden;width:100%;}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: Viking;
+    src: url("../fonts/VikingNormal-36VL.otf");
+}
+
+@font-face {
+    font-family: Futhark;
+    src: url("../fonts/Futhark.otf");
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Header section */
+.header {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+    background: rgba(255, 229, 229, 0.3);
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-top: 26px;
+    font-family: 'Viking';
+    color: #0c0909;
+}
+
+.header__logo h1 {
+    margin-top: -10px;
+    transition: color 1s;
+}
+
+.header__logo h1:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.header__menu {
+    margin-top: 17px;
+    color: #0c0909;
+}
+
+.header__menu .menu li{
+    float: left;
+    margin-left: 30px;
+    font-size: 23px;
+    font-family: 'Viking';
+    transition: color 1s;
+}
+
+.menu li:hover {
+    color: #fff;
+    cursor: pointer;
+}

@@ -15,7 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes([
+    'register' => false,
+    'reset' => false,
+    'verify' => false
+]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'MainController@index')->name('main');
+Route::get('/music', 'MusicController@index')->name('music');
+Route::resource('/admin', 'AdminController')->name('admin', 'admin');

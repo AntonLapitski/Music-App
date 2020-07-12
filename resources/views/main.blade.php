@@ -7,7 +7,7 @@
     <title>{{ config('app.name', 'Tønnes') }}</title>
     <script async type="text/javascript" src="{{ asset('js/slider.js') }}"></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}" >
     <link href="{{ asset('img/hammer.png') }}" rel="shortcut icon" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('fonts/font-awesome.min.css')}}">
@@ -20,12 +20,12 @@
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">
-                <h1 id="tonnes">Tønnes</h1>
+                <h1 id="tonnes">Nordic</h1>
             </div>
             <div class="header__menu">
                 <ul class="menu">
                     <li><a href="#header__id">Home</a></li>
-                    <li>Music-Blog</li>
+                    <li><a href="{{route('music')}}">Music</a></li>
                     <li><a href="#author__id">About us</a></li>
                     <li><a href="#pre__footer__id">Contacts</a></li>
                 </ul>
@@ -115,7 +115,7 @@
 <!-- Blog Section -->
 <section class="blog">
     <div class="container">
-        <h2 class="news">Latest News</h2>
+        <h2 class="news">Latest Posts</h2>
         <div class="blog__wrapper">
             <div class="blog__post">
                 <h3>Lorem ipsum</h3>
