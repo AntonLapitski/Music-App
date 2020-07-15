@@ -115,46 +115,15 @@
 <!-- Blog Section -->
 <section class="blog">
     <div class="container">
-        <h2 class="news">Latest Posts</h2>
-        <div class="blog__wrapper">
-            <div class="blog__post">
-                <h3>Lorem ipsum</h3>
-                <img class="blog__image" src="img/posts/post-one.jpeg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button class="btn">Read More</button>
-            </div>
-            <div class="blog__post">
-                <h3>Lorem ipsum</h3>
-                <img class="blog__image" src="img/posts/post-two.jpeg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button class="btn">Read More</button>
-            </div>
-            <div class="blog__post">
-                <h3>Lorem ipsum</h3>
-                <img class="blog__image" src="img/posts/post-three.png">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button class="btn">Read More</button>
-            </div>
-        </div>
-        <div class="blog__wrapper">
-            <div class="blog__post">
-                <h3>Lorem ipsum</h3>
-                <img class="blog__image" src="img/posts/post-four.jpeg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button class="btn">Read More</button>
-            </div>
-            <div class="blog__post">
-                <h3>Lorem ipsum</h3>
-                <img class="blog__image" src="img/posts/post-five.jpeg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button class="btn">Read More</button>
-            </div>
-            <div class="blog__post">
-                <h3>Lorem ipsum</h3>
-                <img class="blog__image" src="img/posts/post-six.jpeg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button class="btn">Read More</button>
-            </div>
+        <div class="centered">
+            <h2 class="news">Latest Post</h2>
+            <h2>{{$item->name}}</h2>
+            <img src="/storage/img/{{$item->image}}" alt="">
+            <p>{{$item->body}}</p>
+            <audio controls>
+                <source src="{{ url('/') }}/storage/audio/{{$item->audio}}" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
     </div>
 

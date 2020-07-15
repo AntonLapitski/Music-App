@@ -276,8 +276,12 @@ ul {
 .author_content {
     width: fit-content;
     height: fit-content;
+    margin-top: 34px;
 }
 
+audio {
+    width: 100%;
+}
 /*Video*/
 .video__handler {
     padding: 40px;

@@ -3,11 +3,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Item;
 
 class MainController extends Controller
 {
     public function index()
     {
-        return view('main');
+        $item = Item::latest()->first();
+        return view('main', ['item' => $item]);
     }
 }
