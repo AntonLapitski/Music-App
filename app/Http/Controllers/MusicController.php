@@ -15,7 +15,7 @@ class MusicController
 {
     public function index()
     {
-        $items = Item::orderBY('id', 'desc')->paginate(1);;
+        $items = Item::orderBY('id', 'desc')->paginate(5);
         return view('music.music_index', ['items' => $items]);
     }
 }
