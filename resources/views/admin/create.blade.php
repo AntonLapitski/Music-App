@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name', 'Tønnes') }}</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/admin-styles.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin-create-styles.css') }}" rel="stylesheet">
     <link href="{{ asset('img/hammer.png') }}" rel="shortcut icon" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('fonts/font-awesome.min.css')}}">
@@ -32,40 +32,30 @@
 </header>
 
 <section class="display">
-    <div class="link-holder">
-        <a class="btn btn-danger" href="{{route('admin.create')}}">Create Post</a>
-    </div>
     <div class="container">
-        @if(count($items) > 0)
-            <table class="table table-striped">
-                <thead>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Image</th>
-                    <th>Audio</th>
-                    <th>Delete</th>
-                </thead>
-                <tbody>
-                @foreach($items as $item)
-                    <tr>
-                        <th>{{ $item->id }}</th>
-                        <td>{{ $item->name }}</td>
-                        <td>{{ $item->created_at }}</td>
-                        <td>{{ $item->image }}</td>
-                        <td>{{ $item->audio }}</td>
-                        <td>
-                            <form action="{{ route('admin.destroy', ['admin'=>$item->id]) }}" method="POST">
-                                {{ csrf_field() }}
-                                <input type="hidden" name="_method" value="Delete">
-                                <input type="submit" class="btn btn-danger" value="Delete">
-                            </form>
-                        </td>
-                    </tr>
-                @endforeach
-                </tbody>
-            </table>
-        @endif
+        <h2 class="heading">New Post</h2>
+        <div class="form handler">
+            <form enctype="multipart/form-data" action="{{route('admin.store')}}" method="POST">
+                @csrf
+                <div class="form-group">
+                    <label class="naming" for="name">Post name</label>
+                    <input class="form-control" type="text" name="postName" placeholder="Enter name of post" id="name">
+                </div>
+                <div class="form-group">
+                    <label class="naming" for="body">Post body</label>
+                    <textarea class="form-control" name="postBody" id="body" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="naming" for="image">Image</label>
+                    <input type="file" name="image" id="image">
+                </div>
+                <div class="form-group">
+                    <label class="naming" for="audio">Audio</label>
+                    <input type="file" name="audio" id="audio">
+                </div>
+                <button type="submit" class="btn btn-primary for-submit">Submit</button>
+            </form>
+        </div>
     </div>
 </section>
 

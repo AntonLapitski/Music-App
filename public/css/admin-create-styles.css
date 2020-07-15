@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #b5c1b5;
+    background: #304030;
     width: auto;
     box-sizing: border-box;
 }
@@ -101,9 +101,22 @@ ul {
     cursor: pointer;
 }
 
-.link-holder {
+.heading {
     text-align: center;
     margin-top: 20px;
     color: #fff0ff;
-    margin-bottom: 50px;
+}
+
+.form-handler {
+    width: 100%;
+    height: fit-content;
+}
+
+.naming {
+    color: #fff0ff;
+}
+
+.for-submit {
+    position: absolute;
+    left: 50%;
 }

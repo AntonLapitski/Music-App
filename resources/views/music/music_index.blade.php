@@ -73,24 +73,23 @@
     <div class="container">
         <div class="author__wrapper">
             <div class="author_handler">
-                <h2>Title</h2>
-                <p>12/12/12 12:12</p>
-                <img src="img/posts/post-two.jpeg" alt="">
-                <p style="text-align: left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <audio controls>
-                    <source src="{{ url('/') }}/storage/music/gzuz-wolke-7.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
+                @foreach($items as $item)
+                    <div class="author_content">
+                        <h2>{{$item->name}}</h2>
+                        <p>{{$item->created_at}}</p>
+                        <img src="/storage/img/{{$item->image}}" alt="">
+                        <p style="text-align: left">
+                            {{$item->body}}
+                        </p>
+                        <audio controls>
+                            <source src="{{ url('/') }}/storage/audio/{{$item->audio}}" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                @endforeach
+            </div>
+            <div class="row text-center">
+                {{ $items->links() }}
             </div>
         </div>
     </div>

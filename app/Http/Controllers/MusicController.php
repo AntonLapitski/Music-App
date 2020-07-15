@@ -8,12 +8,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Item;
 use Illuminate\Support\Facades\Response;
 
 class MusicController
 {
     public function index()
     {
-        return view('music.music_index');
+        $items = Item::orderBY('id', 'desc')->paginate(1);;
+        return view('music.music_index', ['items' => $items]);
     }
 }

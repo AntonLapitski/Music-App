@@ -273,6 +273,11 @@ ul {
     text-align: center;
 }
 
+.author_content {
+    width: fit-content;
+    height: fit-content;
+}
+
 /*Video*/
 .video__handler {
     padding: 40px;
