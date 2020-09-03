@@ -20,12 +20,12 @@
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">
-                <h1 id="tonnes">Nordic</h1>
+                <h1 id="tonnes">NordicSoft</h1>
             </div>
             <div class="header__menu">
                 <ul class="menu">
                     <li><a href="#header__id">Home</a></li>
-                    <li><a href="{{route('music')}}">Music</a></li>
+                    <li><a href="{{route('music')}}">Posts</a></li>
                     <li><a href="#author__id">About us</a></li>
                     <li><a href="#pre__footer__id">Contacts</a></li>
                 </ul>
@@ -39,7 +39,7 @@
     <div class="fix">
         <div class="container">
             <h1 class="intro__text">
-                <span class="pre__title">Sca</span>ndinavian music and historical music from Tønnes
+                <span class="pre__title">Sca</span>ndinavian Soft from Tønnes
             </h1>
         </div>
     </div>
@@ -50,28 +50,22 @@
     <div class="container">
         <div class="author__letter__wrapper">
             <div class="letter">
-                R
+                T
             </div>
             <div class="letter">
-                A
-            </div>
-            <div class="letter">
-                G
+                O
             </div>
             <div class="letter">
                 N
             </div>
             <div class="letter">
-                A
+                N
             </div>
             <div class="letter">
-                R
+                E
             </div>
             <div class="letter">
-                ø
-            </div>
-            <div class="letter">
-                K
+                S
             </div>
         </div>
     </div>
@@ -82,20 +76,20 @@
         <div class="author__wrapper">
             <h2 class="author__heading news">Tønnes</h2>
             <img class="author__image" src="img/me.jpg">
-            <p class="author__text">My music is about scandinavian mythology and vikings history. I started playing my guitar since I was at school at the age of 16 years old. At this age I went to a band called <a class="custom__link" href="https://www.youtube.com/watch?v=wzVvRZMxyV4">Divided</a> and they were playing technical death metal. Now on my own and this website will include some of my poetry and songs. Enjoy!</p>
+            <p class="author__text">My soft is an accumulator of ideas that based on high level skills and long-term experience. I started programming when i was 16 years old. I respect all customers and their needs.  <a class="custom__link" href="https://www.youtube.com/channel/UCqld9p_ejlAKBwhqzFQ_qJA?view_as=subscriber">NordicSoft</a> is a way to fulfill customer needs and wants with high quality code. Send us email. We use laravel and symfony technologies. Enjoy!</p>
         </div>
         <div class="author__content__wrapper">
             <div class="author__box">
                 <h1>P</h1>
-                <p>Amasing poetry about scandinavian history and vikings, all in one.</p>
+                <p>My code is based on mathematical theory and algorithmic mights</p>
             </div>
             <div class="author__box">
                 <h1>M</h1>
-                <p>Awesome music that is a result of skills gained through a years of practice.</p>
+                <p>Awesome code is a result of skills gained through a years of practice.</p>
             </div>
             <div class="author__box">
                 <h1>H</h1>
-                <p>Gained historical knowledge about vikings and their history and living.</p>
+                <p>Gained knowledge and scientific attitude to problem solving</p>
             </div>
         </div>
     </div>
@@ -105,12 +99,26 @@
 <section class="video__handler">
     <div class="container">
         <div class="video__wrapper">
-            <h2 class="news">Previous Projects</h2>
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/wzVvRZMxyV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/46BjCNH-FZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2 class="news">Marketing</h2>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Jff5mxvNGUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/fSdWQnfO9WM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </section>
+
+<!-- Video Section -->
+<section class="video__handler">
+    <div class="container">
+        <div class="video__wrapper">
+            <h2 class="news">My music project</h2>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/wzVvRZMxyV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/46BjCNH-FZ4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/VTO73rNucwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Nt14hN_svq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
 
 <!-- Blog Section -->
 <section class="blog">
@@ -138,12 +146,12 @@
             <div class="citate">
                 <div class="citate-box">
                     <i class="fa fa-quote-right fa-4x size"></i>
-                    <p class="citate-text news">Music to me is a way to see the world and it's dimensions and angles.
+                    <p class="citate-text news">Soft to me is a way to see the world and it's dimensions and angles.
                     </p>
-                    <p class="citate-text news">Musik för mig är ett sätt att se världen och dess dimensioner och vinklar.</p>
-                    <p class="citate-text news">Musikk for meg er en måte å se verden på og dens dimensjoner og vinkler.</p>
-                    <p class="citate-text news">Musik for mig er en måde at se verden på, og det er dimensioner og vinkler.</p>
-                    <p class="citate-text news">Musik ist für mich eine Möglichkeit, die Welt und ihre Dimensionen und Winkel zu sehen.</p>
+                    <p class="citate-text news">Soft för mig är ett sätt att se världen och dess dimensioner och vinklar.</p>
+                    <p class="citate-text news">Soft for meg er en måte å se verden på og dens dimensjoner og vinkler.</p>
+                    <p class="citate-text news">Soft for mig er en måde at se verden på, og det er dimensioner og vinkler.</p>
+                    <p class="citate-text news">Soft ist für mich eine Möglichkeit, die Welt und ihre Dimensionen und Winkel zu sehen.</p>
                 </div>
                 <div class="citate-box">
                     <div class="item">
@@ -157,6 +165,18 @@
 </section>
 
 <!--</section>-->
+
+<section class="container-test">
+    <div class='intro_test'>
+        <div class="container">
+            <h2 class="positioned">Acknowledgement</h2>
+            <img src="{{ asset('img/certificate.jpg') }}" alt="">
+        </div>
+    </div>
+</section>
+
+
+
 
 <!-- Footer section -->
 <div id="pre__footer__id" class="pre__footer">
@@ -180,6 +200,8 @@
                 <h3 class="contacts-last">Contacts</h3>
                 <i class="fa fa-envelope"><h5>a.laptski.developer@gmail.com</h5></i>
                 <i class="fa fa-phone"><h5>+375447606912</h5></i>
+                <h5 style="margin-top: 20px">Card: 5489 5296 0109 9929</h5>
+                <h5 style="margin-top: 20px">Github: https://github.com/AntonLapitski</h5>
             </div>
         </div>
     </div>

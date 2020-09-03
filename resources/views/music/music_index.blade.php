@@ -20,12 +20,12 @@
     <div class="container">
         <div class="header__inner">
             <div class="header__logo">
-                <h1 id="tonnes">Nordic</h1>
+                <h1 id="tonnes">NordicSoft</h1>
             </div>
             <div class="header__menu">
                 <ul class="menu">
                     <li><a href="{{route('main')}}">Home</a></li>
-                    <li><a href="{{route('music')}}">Music</a></li>
+                    <li><a href="{{route('music')}}">Posts</a></li>
                 </ul>
             </div>
         </div>
@@ -37,7 +37,7 @@
     <div class="fix">
         <div class="container">
             <h1 class="intro__text">
-                <span class="pre__title music">Mus</span>ic
+                <span class="pre__title music">Pos</span>ts
             </h1>
             <div class="arrow">
                 <div class="arrow-down"></div>
@@ -51,19 +51,19 @@
     <div class="container">
         <div class="author__letter__wrapper">
             <div class="letter">
-                M
+                P
             </div>
             <div class="letter">
-                U
+                O
             </div>
             <div class="letter">
                 S
             </div>
             <div class="letter">
-                I
+                T
             </div>
             <div class="letter">
-                C
+                S
             </div>
         </div>
     </div>
@@ -75,10 +75,10 @@
             <div class="author_handler">
                 @foreach($items as $item)
                     <div class="author_content">
-                        <h2>{{$item->name}}</h2>
-                        <p>{{$item->created_at}}</p>
+                        <h2 style="color: #fff0ff">{{$item->name}}</h2>
+                        <p style="color: #fff0ff">{{$item->created_at}}</p>
                         <img src="/storage/img/{{$item->image}}" alt="">
-                        <p style="text-align: left">
+                        <p style="text-align: left; color: #fff0ff">
                             {{$item->body}}
                         </p>
                         <audio controls>
