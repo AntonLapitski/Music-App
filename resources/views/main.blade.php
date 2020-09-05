@@ -200,8 +200,8 @@
                 <h3 class="contacts-last">Contacts</h3>
                 <i class="fa fa-envelope"><h5>a.laptski.developer@gmail.com</h5></i>
                 <i class="fa fa-phone"><h5>+375447606912</h5></i>
-                <h5 style="margin-top: 20px">Card: 5489 5296 0109 9929</h5>
-                <h5 style="margin-top: 20px">Github: https://github.com/AntonLapitski</h5>
+                <h5 class="h5-card" style="margin-top: 20px">Card: 5489 5296 0109 9929</h5>
+                <h5 class="h5-github" style="margin-top: 20px">Github: https://github.com/AntonLapitski</h5>
             </div>
         </div>
     </div>
